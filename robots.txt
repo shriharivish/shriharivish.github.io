@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://acharaakshit.github.io/sitemap.xml
+Sitemap: https://shriharivish.github.io/sitemap.xml
