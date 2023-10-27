@@ -28,10 +28,10 @@ My research interests broadly lie in the intersection of electronics,
 sensing, materials and computing to solve critical healthcare problems
 that are inclusive to underpriviledged markets.
 
-Prior to GE, I pursued B.E. in Electronics and Instrumentation from BITS Pilani. 
-I did my Bachelor's thesis at <a href="https://www.translatum.tum.de/en/translatum/home/">TranslaTUM</a>,
-TU Munich, Germany at Prof. <a href="https://www.professoren.tum.de/en/hayden-oliver">
-Oliver Hayden's</a> lab for biomedical electronics, where my research contributed to help accelerate cancer research.
+Prior to GE, I earned a B.E. in Electronics and Instrumentation from BITS Pilani. 
+I conducted my Bachelor's thesis research at <a href="https://www.translatum.tum.de/en/translatum/home/">TranslaTUM</a>,
+TU Munich, Germany under the guidance of Prof. <a href="https://www.professoren.tum.de/en/hayden-oliver">
+Oliver Hayden's</a> at his lab for biomedical electronics, where my work helped accelerate cancer research.
 
 I spent a summer developing a miniaturized low-cost biosensor at <a href="https://www.ceeri.res.in/">
 CSIR-CEERI</a>, Chennai, India. Additionally, my enthusiasm for artificial intelligence has led me to
