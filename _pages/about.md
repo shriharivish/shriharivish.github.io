@@ -19,8 +19,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an Electronics Design Engineer working for the Maternal
-and Infant Care business at General Electric HealthCare, Bangalore, India.
+I am an Electronics Design Engineer working for the <a href="https://www.gehealthcare.com/products/maternal-infant-care">
+Maternal and Infant Care</a> business at General Electric HealthCare, Bangalore, India.
 Currently pioneering electronic design, transducer optimization
 and signal processing for next generation wireless fetal sensors.
 
@@ -33,9 +33,8 @@ I did my Bachelor's thesis at <a href="https://www.translatum.tum.de/en/translat
 TU Munich, Germany at Prof. <a href="https://www.professoren.tum.de/en/hayden-oliver">
 Oliver Hayden's</a> lab for biomedical electronics, where my research contributed to help accelerate cancer research.
 
-I spent a summer developing a miniaturized low cost biosensor to enable arrhythmia diagnosis
-in resource constrained setting at <a href="https://www.ceeri.res.in/">CSIR-CEERI</a>, Chennai.
-Additionally, my enthusiasm for artificial intelligence has led me to take up multiple projects
-that use AI to deliver tangible outcomes.
+I spent a summer developing a miniaturized low-cost biosensor at <a href="https://www.ceeri.res.in/">
+CSIR-CEERI</a>, Chennai, India. Additionally, my enthusiasm for artificial intelligence has led me to
+take up multiple projects that use AI to deliver tangible outcomes.
 
 In my spare time, I compose music, play the guitar, trek and play sports (primarily Soccer and Basketball).
