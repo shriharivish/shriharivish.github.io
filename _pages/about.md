@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.ge.com/research/'>GE Research, Bangalore</a>
+subtitle: <a href='https://www.gehealthcare.com/'>GE HealthCare, Bangalore</a>
 
 profile:
   align: right
