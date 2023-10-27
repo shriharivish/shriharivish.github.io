@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Shrihari
 middle_name: 
 last_name: Viswanath
-email: acharaakshit@gmail.com
+email: shriharivish@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -71,16 +71,16 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: acharaakshit
+github_username: shriharivish
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: akshit321
+linkedin_username: shrihari-viswanath-a149ba162
 telegram_username: # your Telegram user name
-scholar_userid: https://scholar.google.com/citations?user=F4uM5vAAAAAJ
+scholar_userid: #your scholar id
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: https://orcid.org/0009-0006-4724-5621
+orcid_id: #your orchid id
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -94,7 +94,7 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: # your DBLP profile url
-stackoverflow_id: 11651298
+stackoverflow_id: #your stack overflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id
 spotify_id: # your spotify id
@@ -226,8 +226,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Achara]
-  first_name: [Akshit]
+  last_name: [Viswanath]
+  first_name: [Shrihari]
 
   style: apa
   locale: en
