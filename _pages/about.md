@@ -19,10 +19,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Research Engineer working with the Industrial AI team
-at GE Research, Bangalore, India. I am primarily working on 
-developing NLP techniques for patient reports to aid in
-timeline based patient journeys.
+I am an Electronics Design Engineer working in the Maternal
+and Infant Care business at GE HealthCare, Bangalore, India.
+Currently pioneering electronic design, transducer optimization
+and signal processing for next generation wireless fetal sensors.
 
 My research interests broadly lie in reducing complexity of deep
 learning systems without compromising the generalization
@@ -34,10 +34,11 @@ to MiniZinc in R, advised by Prof. <a href="https://www.cs.uwyo.edu/~larsko/">
 Lars Kotthoff</a> , Mr. <a href="https://hwborchers.lima-city.de/"> Hans W. Borchers</a> and
 Prof. <a href="https://research.monash.edu/en/persons/guido-tack">Guido Tack</a>.
 
-Prior to GE, I pursued MSc. Mathematics from BITS Pilani. I did my Master's thesis
-at TU Munich, advised by Prof. <a href="https://biomedical-big-data.de/authors/markus_list/">
-Markus List</a>, where I worked on developing machine 
-learning frameworks for benchmarking sequence based miRNA tools.
+Prior to GE, I pursued B.E. in Electronics and Instrumentation from BITS Pilani. 
+I did my Bachelor's thesis at TranslaTUM, TU Munich, Germany at 
+Prof. <a href="https://www.professoren.tum.de/en/hayden-oliver">
+Oliver Hayden's</a> lab for biomedical electronics, where I worked on developing
+a cell/tissue culture incubator and integrated it with a benchtop pipetting to accelerate cancer research.
 
 I also did two summer internships at GE Healthcare, working on real-time montioring applications
 and fast MRI scans respectively.
