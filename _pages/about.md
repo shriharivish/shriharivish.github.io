@@ -1,6 +1,6 @@
 ---
-layout: About
-title: About
+layout: about
+title: about
 permalink: /
 subtitle: <a href='https://www.gehealthcare.com/'>GE HealthCare, Bangalore</a>
 
