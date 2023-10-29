@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About
-permalink: /
+permalink: /about/
 subtitle: <a href='https://www.gehealthcare.com/'>GE HealthCare, Bangalore</a>
 
 profile:
