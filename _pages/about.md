@@ -2,6 +2,8 @@
 layout: about
 title: About
 permalink: /about/
+nav: true
+nav_order: 2
 subtitle: <a href='https://www.gehealthcare.com/'>GE HealthCare, Bangalore</a>
 
 profile:
