@@ -48,8 +48,8 @@
 - title: Short-Terms
   type: time_table
   contents:
-    - title: <a href="https://summerofcode.withgoogle.com/archive/2020/projects/6235019934171136">GSoC</a> Contributor
-      institution: Remote
+    - title: Research Assistant
+      institution: Birla Institute of Technology and Science, Pilani, India
       year: 2020
       # description:
       #   - Description 1.
@@ -72,7 +72,7 @@
       institution: GE Healthcare, Bangalore, India
       year: 2019
     - title: Summer Intern
-      institution: GE Healthcare, Bangalore, India
+      institution: CSIR-CEERI, Chennai, India
       year: 2018
       # description:
       #   - Description 1.
