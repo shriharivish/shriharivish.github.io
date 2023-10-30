@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Bone Segmentation
-description: Barebone bone segmentation in MR Images
+title: SHM
+description: Time series analysis of structural sensor data
 img: assets/img/covaid.png
-importance: 6
+importance: 8
 category: fun
 ---
 

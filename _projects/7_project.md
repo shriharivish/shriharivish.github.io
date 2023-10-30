@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Bone Segmentation
-description: Barebone bone segmentation in MR Images
+title: COV-AID
+description: Implementing Social Distancing through Technology
 img: assets/img/covaid.png
-importance: 6
+importance: 7
 category: fun
 ---
 
