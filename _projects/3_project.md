@@ -2,7 +2,7 @@
 layout: page
 title: PPG
 description: Miniturized biosensor for arrhythmia diagnosis
-img: assets/img/resp.png
+img: assets/img/ceeri.png
 importance: 3
 category: work
 ---
