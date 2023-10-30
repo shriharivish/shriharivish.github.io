@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Glaucoma
-description: Neural networks for Glaucoma diagnosis
+description: Neural networks for glaucoma diagnosis
 img: assets/img/kk.jpg
 importance: 5
 category: fun
