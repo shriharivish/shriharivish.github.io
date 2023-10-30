@@ -7,7 +7,7 @@ importance: 3
 category: work
 ---
 
-A miniature (for a wrist watch form factor) Reflective Photoplethysmography module developed at Dr. Bala Pesala’s lab to enable arrhythmia detection in resource constrained settings.
+A miniature (for a wrist watch form factor) Reflective Photoplethysmography module developed at Dr. Bala Pesala’s lab at CSIR-CEERI Chennai to enable arrhythmia detection in resource constrained settings.
 
 With the advent of healthcare technologies, portability of health-care devices is a major concern. One such healthcare device is an Electrocardiograph monitor which requires electrodes in contact with the body. However, it is not portable and often causes skin irritation on continued use. This project aims at innovating a non-contact electrode system to monitors the user's Heart Rate, Heart Rate Variability and pulsatile flow of blood in arteries. The long-term goal of the watch is to help diagnose arrhythmia and detect the causes of fatigue in the user. 
 
@@ -40,13 +40,13 @@ To improve sensitivity of the electronics I designed a transimpedance amplificat
         {% include figure.html path="assets/img/ceeri_finalsignal.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Signal Captures
+    Signal Captures & SpO2 Measurement
 </div>
 
 After implementing a proof-of-concept on the breadboard I designed my first ever PCB on Altium and independently chose a fab house, interacted with the manufacturer, transfer the design, got it optimized and manufactured the PCB to deliver a wrist watch sized device.
 
 <div class="img">
-        {% include figure.html path="assets/img/ceeri_pcb.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ceeri_pcb.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     PCB
