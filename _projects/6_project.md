@@ -2,7 +2,7 @@
 layout: page
 title: Bone Segmentation
 description: Image processing for bone segmentation in MR Images
-img: assets/img/mri.jpg
+img: assets/img/mri_out.jpg
 importance: 6
 category: fun
 ---
@@ -18,28 +18,28 @@ Method 2: A simpler implementation for automatic segmentation might use adaptive
 In the various images below, there are four outputs which are respectively the original image, the noisy image, the output of method 1 (Sobel edge detection) and the output of method 2 (Otsu’s thresholding).
 
 <div class="img">
-        {% include figure.html path="assets/img/knee_out.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/knee_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Knee MRI
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/brain_out.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/brain_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Brain MRI
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/back_out.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/back_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Back MRI
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/hip_out.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/hip_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Hip MRI
