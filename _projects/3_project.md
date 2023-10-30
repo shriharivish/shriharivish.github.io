@@ -46,7 +46,7 @@ To improve sensitivity of the electronics I designed a transimpedance amplificat
 After implementing a proof-of-concept on the breadboard I designed my first ever PCB on Altium and independently chose a fab house, interacted with the manufacturer, transfer the design, got it optimized and manufactured the PCB to deliver a wrist watch sized device.
 
 <div class="img">
-        {% include figure.html path="assets/img/ceeri_pcb.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ceeri_pcba.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     PCB
