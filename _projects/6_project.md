@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bone Segmentation
+title: Bone MRI
 description: Image processing for bone segmentation in MR Images
 img: assets/img/mri_out.jpg
 importance: 6
