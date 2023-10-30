@@ -35,9 +35,4 @@ I conducted my Bachelor's thesis research at <a href="https://www.translatum.tum
 TU Munich, Germany under the guidance of Prof. <a href="https://www.professoren.tum.de/en/hayden-oliver">
 Oliver Hayden</a> at his lab for biomedical electronics, where my work helped accelerate cancer research.
 
-I spent a summer developing a miniaturized low-cost biosensor to enable arrhythmia diagnosis
-at <a href="https://www.ceeri.res.in/">CSIR-CEERI</a>, Chennai, India. Additionally, my
-enthusiasm for artificial intelligence has led me to take up multiple projects that use AI
-to deliver tangible outcomes.
-
 In my spare time, I compose music, play the guitar, trek and play sports (primarily Soccer and Basketball).
