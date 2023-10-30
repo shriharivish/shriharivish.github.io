@@ -2,7 +2,7 @@
 layout: page
 title: Glaucoma
 description: Neural networks for Glaucoma diagnosis
-img: assets/img/covaid.png
+img: assets/img/kk.jpg
 importance: 5
 category: fun
 ---
