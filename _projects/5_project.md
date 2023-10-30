@@ -49,3 +49,5 @@ The network has been grouped into three parts consisting of two, two and three c
 <div class="caption">
     Sensitivity and specificity values
 </div>
+
+The model has been trained using the binary cross entropy loss function. The model has been trained on a total of 410 images out of which 180 are images of glaucoma ridden eyes and 230 are glaucoma free. Then, the model was tested on 45 images. Out of the 45 images in the testing set, 25 are normal and 20 are affected.
