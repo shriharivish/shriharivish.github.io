@@ -21,7 +21,7 @@ and denoising using a successive DWT and IDWT implementation.
 Methods of Smoothing:
 1. Moving Average
 2. Exponential Smoothing
-3. Trend Exponential mSmoothing
+3. Trend Exponential Smoothing
 4. Trend and Seasonal Exponential Smoothing
 5. ARMA
 6. ARIMA
