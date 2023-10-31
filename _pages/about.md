@@ -8,7 +8,7 @@ subtitle: <a href='https://www.gehealthcare.com/'>GE HealthCare, Bangalore</a>
 
 profile:
   align: right
-  image: profpic.JPG
+  image: prof_pic.JPG
   image_circular: false # crops the image to make it circular
   #address: >
   #  <p>555 your office number</p>
