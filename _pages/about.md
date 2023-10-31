@@ -33,6 +33,6 @@ that are inclusive to underpriviledged markets.
 Prior to GE, I earned a B.E. in Electronics and Instrumentation from BITS Pilani. 
 I conducted my Bachelor's thesis research at <a href="https://www.translatum.tum.de/en/translatum/home/">TranslaTUM</a>,
 TU Munich, Germany under the guidance of Prof. <a href="https://www.professoren.tum.de/en/hayden-oliver">
-Oliver Hayden</a> at his lab for biomedical electronics, where my work helped accelerate cancer research.
+Oliver Hayden</a> at his lab for biomedical electronics, where my work helped accelerate cancer research and drug testing.
 
 In my spare time, I compose music, play the guitar, trek and play sports (primarily Soccer and Basketball).
