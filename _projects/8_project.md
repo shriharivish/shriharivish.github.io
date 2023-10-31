@@ -2,7 +2,7 @@
 layout: page
 title: SHM
 description: Time series analysis of structural sensor data
-img: assets/img/shm.png
+img: assets/img/shmp.png
 importance: 8
 category: fun
 ---
