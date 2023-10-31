@@ -2,7 +2,7 @@
 layout: page
 title: SHM
 description: Time series analysis of structural sensor data
-img: assets/img/shm_pfolio.png
+img: assets/img/shm.png
 importance: 8
 category: fun
 ---
@@ -32,5 +32,5 @@ Methods of Smoothing:
     </div>
 </div>
 <div class="caption">
-   Toolkit; Basic Exponential Smoothing Example
+   Toolkit UI; Exponential Smoothing Example
 </div>
