@@ -18,10 +18,10 @@ Method 2: A simpler implementation for automatic segmentation might use adaptive
 In the various images below, there are four outputs which are respectively the original image, the noisy image, the output of method 1 (Sobel edge detection) and the output of method 2 (Otsu’s thresholding).
 
 <div class="img">
-        {% include figure.html path="assets/img/knee_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/hip_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Knee MRI
+    Hip MRI
 </div>
 
 <div class="img">
@@ -39,10 +39,10 @@ In the various images below, there are four outputs which are respectively the o
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/hip_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/knee_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Hip MRI
+    Knee MRI
 </div>
 
 Both the methods give decent results and are able to segment the bones roughly. The issue with
