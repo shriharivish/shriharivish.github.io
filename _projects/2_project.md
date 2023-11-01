@@ -95,6 +95,6 @@ a multi-parametric PID control loop with inter-dependent variables. This
 complex implementation within constrained timelines required a good
 amount of effort to fine tune the system. I was able to demonstrate the
 performance of the incubator and control system within the assigned
-internship duration of five and half months. Other than my thesis work,
+duration of my time in Germany. Other than my thesis work,
 I also wrote scripts to help others automate their work on the Opentrons
 and was the first person to get the system up and running. 
