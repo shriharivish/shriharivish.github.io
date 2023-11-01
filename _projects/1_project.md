@@ -12,7 +12,7 @@ The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It e
 LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_tx.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_tx.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Transmit pulse shape improvement
@@ -21,7 +21,7 @@ LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal as heat dissipation was a problem due to the IP68 requirements of the sensor.
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_sensdpc.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_sensdpc.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Sensitivity improvement from prototype and DoE to demonstrate performance
@@ -48,7 +48,7 @@ The receive circuitry was drastically changed from the predicate as well. We int
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_jitter.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_jitter.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Jitter improvement demonstrating picosecond level jitter
@@ -62,7 +62,7 @@ Crosstalk 4: During crosstalk of large signals, the LC tank output would get sat
 I’ve come up with an innovative low-cost low power solution to generate reconfigurable clock frequencies down to a 1Hz precision meeting the stringent jitter requirements of the system. This has majorly helped minimise all crosstalk effects. 
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_crosstalksim.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_crosstalksim.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Simulation of crosstalk in the downcoverter
@@ -80,7 +80,7 @@ I’ve come up with an innovative low-cost low power solution to generate reconf
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_dspfilters.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_dspfilters.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Low latency shaping filters for audio response
@@ -89,7 +89,7 @@ I’ve come up with an innovative low-cost low power solution to generate reconf
 I have designed the automatic gain control block in the DSP core of the microcontroller to help normalise the receive signal and make it easier for the heart rate algorithm to work. I also implemented a harmonic elimination technique using this very AGC I designed that helped solve a critical crosstalk problem. I have resolved major performance issues on the free-running frame-based autocorrelation algorithm and the control loop used to detect fetal movement. I have designed multiple low latency filters and developed other signal conditioning blocks like the envelope detector and the audio equaliser. 
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_gluemodel.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_gluemodel.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     FEM simulation with varying glue thickness
@@ -98,14 +98,14 @@ I have designed the automatic gain control block in the DSP core of the microcon
 To tackle process issues related to manufacturing of the transducer and the glueing involved I started modelling the PZT being used and the fully assembled transducer. Started out with fitting the FEM parameters using off the shelf PZT’s available publicly. Due to coupling of the radial and thickness mode there were considerable complexities in modelling. All parameters had to be fine tuned to match the measurements made in the lab. After assembly there was a significant change in the characteristics of the transducers because of the processes involved and the next stage was to model this. The plastics and glue were then integrated into the model next. This model was again tested with the assembled transducers and parameters were fine tuned here again. To understand the effect due to process variability of glueing, the thickness was varied, and the simulations were performed to evaluate performance across a large batch of manufactured transducers.
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_modelsens.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_modelsens.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Pressure sensitivity simulation of transducer
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_elecmodel.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_elecmodel.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Electrical sensitivity simulation integrated with transducer sensitivity
