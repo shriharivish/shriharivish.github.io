@@ -13,14 +13,14 @@ Developed a DICOM image viewer, browser and library which can support multiple i
         {% include figure.html path="assets/img/dicom_flow.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Approach 1 (GT vs Binding Sites)
+    Flow diagram for the viewer and library
 </div>
 
 <div class="img">
         {% include figure.html path="assets/img/dicom_deployment.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Approach 1 (GT vs Binding Sites)
+    Deployment architecture
 </div>
 
 The image viewer is called from the browser when an image is launched. The viewer has functionality to scroll across slices in a single scan and allows the user to move across scans for a single patient. It has the feature to vary Window Level (Brightness) and Window Width (Contrast) of the image being displayed. Allows viewing of multiple series through multiple viewports in a single screen and displays relevant annotations (series name, image number, slice number, orientation, patient name, etc.) in the viewport. Users are allowed to set an upper and lower threshold for image pixel values and can also edit and insert new DICOM tags to the currently opened DICOM exam. Images can be re-oriented as sagittal/axial/coronal/oblique in the viewer. 
@@ -29,7 +29,7 @@ The image viewer is called from the browser when an image is launched. The viewe
         {% include figure.html path="assets/img/dicom_sequence.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Approach 1 (GT vs Binding Sites)
+    Sequence website for the viewer and library
 </div>
 
 We additionally implemented authentication, user management and measures to preserve safety of the data being stored. Implemented a startup script and unit configuration file to automate startup of the service and configured reverse proxy for backend service. Allowed image deletion from the UI and added tools like Flood-Fill, LiveWire and Draw to the viewer. Added an extensive logging mechanism on the entire deployed service.
@@ -38,7 +38,7 @@ We additionally implemented authentication, user management and measures to pres
         {% include figure.html path="assets/img/dicom_aiflow.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Approach 1 (GT vs Binding Sites)
+    Flow diagram for the segmentation tool
 </div>
 
 We then designed an AI powered brain segmentation application that segments Gray Matter (GM), White Matter (WM), and Cerebrospinal Fluid (CSF) from the Neuro-MR exams. The brain segmentation application was deployed as an independent containerised service linked to the image viewer tool. The tool also helped visualise the three segmentations over the brain MR scan as an overlay. It could be customised to view different segmentations at a given time. For example, view only GM and CSF overlay, view only WM and GM overlay, and any such combination. The application allowed segmentation mask visualisation in planes other than the acquisition plane, an exam scanned and segmented in the axial plan could be viewed in the coronal/sagittal plan as well. 
@@ -48,7 +48,7 @@ There were around 700 patient exams with masks. Each segmentation mask correspon
         {% include figure.html path="assets/img/dicom_model.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Approach 1 (GT vs Binding Sites)
+    U-NET architecture used
 </div>
 
 Results of the segmentation model tested with a blind dataset of 80 images:
@@ -64,7 +64,7 @@ Results of the segmentation model tested with a blind dataset of 80 images:
         {% include figure.html path="assets/img/dicom_seg.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Approach 1 (GT vs Binding Sites)
+    Segmentation results
 </div>
 
 UI design involved and the templates are confidential property of GE and cannot be shared publicly.
