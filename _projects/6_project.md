@@ -45,6 +45,20 @@ In the various images below, there are four outputs which are respectively the o
     Hip MRI
 </div>
 
-We can clearly see that both the methods are giving us decent results and are able to segment the bones roughly. The issue with Otsu’s thresholding is that in areas where the dark cortical tissue is lighter, it gets labelled as a bright area, thus connecting the bright trabecular and muscle tissues. Also, because the areas of connection between bone and muscle tissue are so large at the ends of the bones, they cannot be easily split with operations such as morphological opening. The Sobel segmentation is cleaner than adaptive Otsu segmentation, but like the Otsu method, Sobel connects the bone tissue with muscle tissue at the ends of the bones where the cortical layer is thin. The noise removal using the median filter and also the contrast enhancement using histogram equalisation are working well. They are giving optimal results without losing too much detail in the image. Also, in Sobel’s edge detection there are fake and weak edges that create a lot of confusion for the person to understand. Using dilation and other morphological operations are also giving unreal and wrong outputs.
+Both the methods give decent results and are able to segment the bones roughly. The issue with
+Otsu’s thresholding is that in areas where the dark cortical tissue
+is lighter, it gets labelled as a bright area, thus connecting the
+bright trabecular and muscle tissues. Also, because the areas of
+connection between bone and muscle tissue are so large at the
+ends of the bones, they cannot be easily split with operations such
+as morphological opening. The Sobel segmentation is cleaner than
+adaptive Otsu segmentation, but like the Otsu method, Sobel
+connects the bone tissue with muscle tissue at the ends of the
+bones where the cortical layer is thin. The noise removal using the
+median filter and also the contrast enhancement using histogram
+equalisation work well for the given application. They are deliver optimal results
+without losing too much detail in the image. Also, in Sobel’s edge
+detection there are fake and weak edges that create a lot of
+confusion for the examiner to understand. 
 
 We also implemented Snakes or commonly known as active contouring. These are like flexible lines that adjust their shape to fit the edges of objects in images. They use both external forces to guide them and internal forces to resist changes in their shape. It is like a way to match a flexible model to an image by finding the best fit with the least energy.
