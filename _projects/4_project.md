@@ -16,20 +16,20 @@ Developed a DICOM image viewer, browser and library which can support multiple i
     Flow diagram for the viewer and library
 </div>
 
-<div class="img">
-        {% include figure.html path="assets/img/dicom_deployment.png" title="example image" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Deployment architecture
-</div>
-
 The image viewer is called from the browser when an image is launched. The viewer has functionality to scroll across slices in a single scan and allows the user to move across scans for a single patient. It has the feature to vary Window Level (Brightness) and Window Width (Contrast) of the image being displayed. Allows viewing of multiple series through multiple viewports in a single screen and displays relevant annotations (series name, image number, slice number, orientation, patient name, etc.) in the viewport. Users are allowed to set an upper and lower threshold for image pixel values and can also edit and insert new DICOM tags to the currently opened DICOM exam. Images can be re-oriented as sagittal/axial/coronal/oblique in the viewer. 
 
 <div class="img">
         {% include figure.html path="assets/img/dicom_sequence.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Sequence website for the viewer and library
+    Sequence diagram for the viewer and library
+</div>
+
+<div class="img">
+        {% include figure.html path="assets/img/dicom_deployment.png" title="example image" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="caption">
+    Deployment architecture
 </div>
 
 We additionally implemented authentication, user management and measures to preserve safety of the data being stored. Implemented a startup script and unit configuration file to automate startup of the service and configured reverse proxy for backend service. Allowed image deletion from the UI and added tools like Flood-Fill, LiveWire and Draw to the viewer. Added an extensive logging mechanism on the entire deployed service.
