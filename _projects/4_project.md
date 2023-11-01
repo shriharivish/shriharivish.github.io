@@ -35,7 +35,7 @@ The image viewer is called from the browser when an image is launched. The viewe
 We additionally implemented authentication, user management and measures to preserve safety of the data being stored. Implemented a startup script and unit configuration file to automate startup of the service and configured reverse proxy for backend service. Allowed image deletion from the UI and added tools like Flood-Fill, LiveWire and Draw to the viewer. Added an extensive logging mechanism on the entire deployed service.
 
 <div class="img">
-        {% include figure.html path="assets/img/dicom_flow.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dicom_aiflow.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Approach 1 (GT vs Binding Sites)
@@ -52,13 +52,13 @@ There were around 700 patient exams with masks. Each segmentation mask correspon
 </div>
 
 Results of the segmentation model tested with a blind dataset of 80 images:
-Dice Score: 0.87 (WM); 0.83 (GM); 0.65 (CSF)
-Specificity: 0.99 (WM); 0.98 (GM); 0.99 (CSF)
-Sensitivity: 0.87 (WM); 0.84 (GM); 0.63 (CSF)
-Miss Rate: 0.12 (WM); 0.15 (GM); 0.36 (CSF)
-False Positive Rate: 0.01 (WM); 0.01 (GM); 0.01 (CSF)
-Positive Predictive Value: 0.87 (WM); 0.81 (GM); 0.69 (CSF)
-Negative Predictive Value: 0.99 (WM); 0.99 (GM); 0.99 (CSF)
+1. Dice Score: 0.87 (WM); 0.83 (GM); 0.65 (CSF)
+2. Specificity: 0.99 (WM); 0.98 (GM); 0.99 (CSF)
+3. Sensitivity: 0.87 (WM); 0.84 (GM); 0.63 (CSF)
+4. Miss Rate: 0.12 (WM); 0.15 (GM); 0.36 (CSF)
+5. False Positive Rate: 0.01 (WM); 0.01 (GM); 0.01 (CSF)
+6. Positive Predictive Value: 0.87 (WM); 0.81 (GM); 0.69 (CSF)
+7. Negative Predictive Value: 0.99 (WM); 0.99 (GM); 0.99 (CSF)
 
 <div class="img">
         {% include figure.html path="assets/img/dicom_seg.png" title="example image" class="img-fluid rounded z-depth-1" %}
