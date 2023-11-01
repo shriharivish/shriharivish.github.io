@@ -8,8 +8,7 @@ category: work
 ---
 
 Culture is the process where a fragment of biomatter is forced to grow or develop in a tertiary
-medium. Tissue culture is of various types based and is classified based on the originating 
-fragment. Tissue and cell culture are helping pave the way for numerous technological breakthroughs
+medium. Tissue and cell culture are helping pave the way for numerous technological breakthroughs
 and the aim of the thesis is to improve the efficiency with which experiments are conducted. AT TranslaTUM,
 this research is primarily gong to be used to perform rapid cancer drug testing and cell model studies.
 
@@ -36,13 +35,17 @@ pipetting is done or alongside the pipetting, all remotely.
     Heating Architecture and Mounting Mechanism
 </div>
 
-An incubator is best represented by a human body in terms of the ambient conditions required to help cells
-and tissues grow. The most important factor thus is temperature. The design of the system was extremely
-constricted due to the movement of the robot’s arm. A heater generating over 800W would have to be used to
-be able to reliably run the control loop with margin. Given size constraints, we finally found one suitable option,
-a ceramic thin plate heater. I designed and manually fabricated the mounting mechanism with reliable materials with 
-proven resistance to heat and durability at high temperatures. I also architected the circuilation system for even
-distribution of heat in the chamber.
+An incubator is best represented by a human body in terms of the
+ambient conditions required to help cells and tissues grow. The most
+important factor thus is temperature. The space required to implement
+the additional devices for creating an incubator was restricted due to the
+movement of the robot’s arm. A 800W heater was needed to achieve
+the specified temperature requirement and maintain the control loop
+within the prescribed margin. Given the constraints, a ceramic thin plate
+heater was chosen. I also chose suitable materials and fabricated a rugged mounting
+mechanism to withstand and isolate the heat over long periods of time.
+I thereafter, architected the circulation system for even distribution of
+heat in the chamber.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -53,13 +56,16 @@ distribution of heat in the chamber.
     Humidity Control
 </div>
 
-The next parameter we took on was the humidity to preserve the osmolarity of the samples being cultures, especially
-given the heating mechanism in place. Gas washing flasks are used to wet/ humidify gases by exposing
+The next parameter to be addressed was humidity control so as to
+preserve the osmolarity of the culture samples. To achieve this glass
+washing flasks were used. Gas washing flasks are used to wet/ humidify gases by exposing
 them to water. When the gas from the inlet pipe reaches the bottom of a filled flask it rises up
 in bubbles and along the way picks up water particles and then exits via the exit pipe. In
-principle, it is almost the same as a water bath humidifier. The amount of water and the flow
-rate are key factors that affect the resulting humidity of the system. I implemented various configurations with
-best performance achieved with three flasks in series being driven by a vaccum gas pump. 
+principle, it is almost the same as a water bath humidifier. I implemented the arrangement using a
+vacuum gas pump that pumped the gas to the bottom of the water filled
+flask. By suitably designing the flow rate and quantity of water used, the
+incubator humidity can be controlled. A three flask configuration in
+series was designed to maximise the efficiency of the system.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -73,7 +79,7 @@ best performance achieved with three flasks in series being driven by a vaccum g
 The last control implemented was for CO2 in the chamber. I worked with SENDSOR Gmbh to integrate their flow based
 CO2 sensor into the chamber for implementing closed loop control of the same. We ran intial testing of the sensor and
 my integrated system for the CO2 level readout at the SENDSOR headqurters in Munich. I created an inlet in the chamber
-and a electronically controlled pneumatic switch to control when the CO2 would flow into the chamber for control.
+and added a electronically controlled pneumatic switch to control the flow of CO2 into the chamber.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -84,7 +90,11 @@ and a electronically controlled pneumatic switch to control when the CO2 would f
     Multiparametric PID Control on Arduino
 </div>
 
-FInally, I integrated all the actuation subsystems onto a single Arduino and then implemented a multiparametric control
-loop with interdependent variables. This was quite complex to implement but after carefully finetuning the control system
-I was able to close my work at TranslaTUM and run experiments for the group before my time in Germany came to an end. Other than my thesis work, I also wrote scripts to help others automate their work on the Opentrons and was the first person to get the
-system up and running. 
+Finally, I integrated the sub-systems onto an Arduino and implemented
+a multi-parametric PID control loop with inter-dependent variables. This
+complex implementation within constrained timelines required a good
+amount of effort to fine tune the system. I was able to demonstrate the
+performance of the incubator and control system within the assigned
+internship duration of five and half months. Other than my thesis work,
+I also wrote scripts to help others automate their work on the Opentrons
+and was the first person to get the system up and running. 
