@@ -15,7 +15,7 @@ LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
         {% include figure.html path="assets/img/uls_tx.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Trnasmit pulse shape improvement
 </div>
 
 Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal as heat dissipation was a problem due to the IP68 requirements of the sensor.
@@ -24,14 +24,7 @@ Designed a new boost converter adapted transmit circuitry to optimise for power 
         {% include figure.html path="assets/img/uls_sensdpc.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
-</div>
-
-<div class="img">
-        {% include figure.html path="assets/img/uls_senselec.png" title="example image" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Segmentation results
+    Sensitivity improvement from prototype and DoE to demonstrate
 </div>
 
 The receive circuitry was drastically changed from the predicate as well. We introduced a tunable impedance element for maximising noiseless gain in the system and regularising gain across sensors despite manufacturing variabilities. The sensitivity was also improved drastically by redesigning the front end for low bias currents and higher input impedances preventing smaller signals from being dissipated. I introduced a new demodulation strategy for miniaturisation, performed gain rebalancing across the entire signal chain, optimised the RF amplifiers to accommodate the appropriate bandwidth, redesigned the high-order filters and introduced a mixer circuitry to accommodate for two channel sensing using one single ADC. I also drastically improved the noise performance of the sensor. 
@@ -40,14 +33,14 @@ The receive circuitry was drastically changed from the predicate as well. We int
         {% include figure.html path="assets/img/uls_noise.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Noise levels achieved in a high gain system
 </div>
 
 <div class="img">
         {% include figure.html path="assets/img/uls_jitter.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Jitter improvement demonstrating picosecond level jitter
 </div>
 
 Clock jitter is critical to performance of the ultrasound. Due to the way we demodulate in the RF domain, jitter can critically affect our noise levels as we even demodulate the directly reflected signals that are transmitted by the transducer. Jitter would mean we transmit one frequency and demodulate that very wave with a slightly different frequency giving rise to harmonics in our band of operation and thus an unwanted noise in our system. Need to meet jitter spec under 10ps given the sensitivity of the device.
@@ -61,21 +54,21 @@ I’ve come up with an innovative low-cost low power solution to generate reconf
         {% include figure.html path="assets/img/uls_crosstalksim.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Simulation of crosstalk in the downcoverter
 </div>
 
 <div class="img">
         {% include figure.html path="assets/img/uls_AGC.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Logarithmic loop automatic gain control block
 </div>
 
 <div class="img">
         {% include figure.html path="assets/img/uls_dspfilters.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Low latency shaping filters for audio response
 </div>
 
 I have designed the automatic gain control block in the DSP core of the microcontroller to help normalise the receive signal and make it easier for the heart rate algorithm to work. I also implemented a harmonic elimination technique using this very AGC I designed that helped solve a critical crosstalk problem. I have resolved major performance issues on the free-running frame-based autocorrelation algorithm and the control loop used to detect fetal movement. I have designed multiple low latency filters and developed other signal conditioning blocks like the envelope detector and the audio equaliser. 
@@ -84,7 +77,7 @@ I have designed the automatic gain control block in the DSP core of the microcon
         {% include figure.html path="assets/img/uls_gluemodel.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    FEM simulation with varying glue thickness
 </div>
 
 To tackle process issues related to manufacturing of the transducer and the glueing involved I started modelling the PZT being used and the fully assembled transducer. Started out with fitting the FEM parameters using off the shelf PZT’s available publicly. Due to coupling of the radial and thickness mode there were considerable complexities in modelling. All parameters had to be fine tuned to match the measurements made in the lab. After assembly there was a significant change in the characteristics of the transducers because of the processes involved and the next stage was to model this. The plastics and glue were then integrated into the model next. This model was again tested with the assembled transducers and parameters were fine tuned here again. To understand the effect due to process variability of glueing, the thickness was varied, and the simulations were performed to evaluate performance across a large batch of manufactured transducers.
@@ -93,14 +86,14 @@ To tackle process issues related to manufacturing of the transducer and the glue
         {% include figure.html path="assets/img/uls_modelsens.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Pressure sensitivity simulation of transducer
 </div>
 
 <div class="img">
         {% include figure.html path="assets/img/uls_elecmodel.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Segmentation results
+    Electrical sensitivity simulation integrated with transducer sensitivity
 </div>
 
 Assuming a nominal thickness the complete transducer model was exported and then used to model the pressure sensitivity of the transducer and electro-mechanical interface. It was also used to model the transmit and receive sensitivity by using approximated mathematical models of the transmit and receive circuitry.
