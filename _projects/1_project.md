@@ -9,7 +9,7 @@ category: work
 
 The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. It is responsible for the generation of the Transmit Acoustic Signal, receiving the reflected signal from one of the fetuses, as well as the processing of the signal, determination of the fetal heart rate, and finally the transmission of the fetal heartbeat information to the fetal monitor digitally. The module is a low power sensor designed to be operated continuously for over a day because of which the transmit power of the ultrasound needed to be very low. High transmit powers can lead to heating of tissues potentially harming the mother and the baby. The major complexity of design here is driven by sensitivity given the low acoustic output coupled with the acoustic attenuation due to human skin, fat and the interface. The other complexity is that this is a multiple transducer system leading to various types of crosstalk causing signal confusion, interference, and noise. We have also performed extensive miniaturisation of the electronics to accommodate all the electronics in this small sensor instead of the large Corometrics device.
 
-LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS
+LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
 <div class="img">
         {% include figure.html path="assets/img/uls_tx.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -90,14 +90,14 @@ I have designed the automatic gain control block in the DSP core of the microcon
 To tackle process issues related to manufacturing of the transducer and the glueing involved I started modelling the PZT being used and the fully assembled transducer. Started out with fitting the FEM parameters using off the shelf PZT’s available publicly. Due to coupling of the radial and thickness mode there were considerable complexities in modelling. All parameters had to be fine tuned to match the measurements made in the lab. After assembly there was a significant change in the characteristics of the transducers because of the processes involved and the next stage was to model this. The plastics and glue were then integrated into the model next. This model was again tested with the assembled transducers and parameters were fine tuned here again. To understand the effect due to process variability of glueing, the thickness was varied, and the simulations were performed to evaluate performance across a large batch of manufactured transducers.
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_sensmodel.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_modelsens.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Segmentation results
 </div>
 
 <div class="img">
-        {% include figure.html path="assets/img/uls_modelelec.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/uls_elecmodel.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Segmentation results
