@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DICOM
-description: End to end DICOM viewer with an AI tool.
+description: End to end DICOM viewer with an AI segmentation tool.
 img: assets/img/dicom.JPG
 importance: 3
 category: fun
