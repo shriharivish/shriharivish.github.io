@@ -34,11 +34,15 @@ The image viewer is called from the browser when an image is launched. The viewe
 
 We additionally implemented authentication, user management and measures to preserve safety of the data being stored. Implemented a startup script and unit configuration file to automate startup of the service and configured reverse proxy for backend service. Allowed image deletion from the UI and added tools like Flood-Fill, LiveWire and Draw to the viewer. Added an extensive logging mechanism on the entire deployed service.
 
-<div class="img">
-        {% include figure.html path="assets/img/dicom_aiflow.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Flow diagram for the segmentation tool
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/dicom_aiflow.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            Flow diagram for the segmentation tool
+        </div>
+    </div>
 </div>
 
 We then designed an AI powered brain segmentation application that segments Gray Matter (GM), White Matter (WM), and Cerebrospinal Fluid (CSF) from the Neuro-MR exams. The brain segmentation application was deployed as an independent containerised service linked to the image viewer tool. The tool also helped visualise the three segmentations over the brain MR scan as an overlay. It could be customised to view different segmentations at a given time. For example, view only GM and CSF overlay, view only WM and GM overlay, and any such combination. The application allowed segmentation mask visualisation in planes other than the acquisition plane, an exam scanned and segmented in the axial plan could be viewed in the coronal/sagittal plan as well. 
