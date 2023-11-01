@@ -15,7 +15,7 @@ LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
         {% include figure.html path="assets/img/uls_tx.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Trnasmit pulse shape improvement
+    Transmit pulse shape improvement
 </div>
 
 Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal as heat dissipation was a problem due to the IP68 requirements of the sensor.
@@ -24,7 +24,7 @@ Designed a new boost converter adapted transmit circuitry to optimise for power 
         {% include figure.html path="assets/img/uls_sensdpc.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Sensitivity improvement from prototype and DoE to demonstrate
+    Sensitivity improvement from prototype and DoE to demonstrate performance
 </div>
 
 <div class="row justify-content-center">
