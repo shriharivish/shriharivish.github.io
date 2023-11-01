@@ -35,7 +35,7 @@ The image viewer is called from the browser when an image is launched. The viewe
 We additionally implemented authentication, user management and measures to preserve safety of the data being stored. Implemented a startup script and unit configuration file to automate startup of the service and configured reverse proxy for backend service. Allowed image deletion from the UI and added tools like Flood-Fill, LiveWire and Draw to the viewer. Added an extensive logging mechanism on the entire deployed service.
 
 <div class="img">
-        {% include figure.html path="assets/img/dicom_aiflow.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dicom_aiflow.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Approach 1 (GT vs Binding Sites)
