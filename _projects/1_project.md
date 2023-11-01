@@ -2,7 +2,7 @@
 layout: page
 title: Ultrasound
 description: High fidelity low-power ultrasound fetal sensor
-img: assets/img/ultrasound.JPG
+img: assets/img/uls.png
 importance: 1
 category: work
 ---
