@@ -27,6 +27,17 @@ Designed a new boost converter adapted transmit circuitry to optimise for power 
     Sensitivity improvement from prototype and DoE to demonstrate
 </div>
 
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/uls_senselec.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            Demonstrating nanovolt level sensitivity
+        </div>
+    </div>
+</div>
+
 The receive circuitry was drastically changed from the predicate as well. We introduced a tunable impedance element for maximising noiseless gain in the system and regularising gain across sensors despite manufacturing variabilities. The sensitivity was also improved drastically by redesigning the front end for low bias currents and higher input impedances preventing smaller signals from being dissipated. I introduced a new demodulation strategy for miniaturisation, performed gain rebalancing across the entire signal chain, optimised the RF amplifiers to accommodate the appropriate bandwidth, redesigned the high-order filters and introduced a mixer circuitry to accommodate for two channel sensing using one single ADC. I also drastically improved the noise performance of the sensor. 
 
 <div class="img">
@@ -57,11 +68,15 @@ I’ve come up with an innovative low-cost low power solution to generate reconf
     Simulation of crosstalk in the downcoverter
 </div>
 
-<div class="img">
-        {% include figure.html path="assets/img/uls_AGC.png" title="example image" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Logarithmic loop automatic gain control block
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/uls_AGC.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            Logarithmic loop automatic gain control block
+        </div>
+    </div>
 </div>
 
 <div class="img">
