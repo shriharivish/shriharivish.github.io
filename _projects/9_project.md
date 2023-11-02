@@ -64,7 +64,7 @@ Support vector machines were also implemented with and without the application o
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="img">
-            {% include figure.html path="assets/img/mlr_acc.png" title="example image" class="img-fluid rounded z-depth-1" %}
+            {% include figure.html path="assets/img/mlr_Acc.png" title="example image" class="img-fluid rounded z-depth-1" %}
         </div>
         <div class="caption">
             Accuracies of different techniques
