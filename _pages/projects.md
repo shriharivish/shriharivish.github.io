@@ -5,6 +5,7 @@ permalink: /
 description: 
 #display_categories: [work, fun]
 horizontal: false
+social: true
 ---
 
 <!-- pages/projects.md -->
