@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Works
+title: Portfolio
 permalink: /
 description: 
 #display_categories: [work, fun]
-horizontal: false
+#horizontal: false
 ---
 
 <!-- pages/projects.md -->
