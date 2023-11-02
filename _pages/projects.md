@@ -3,7 +3,6 @@ layout: page
 title: Portfolio
 permalink: /
 description: 
-nav: true
 #display_categories: [work, fun]
 horizontal: false
 ---
