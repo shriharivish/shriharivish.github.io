@@ -1,64 +1,47 @@
 ---
 layout: page
-title: Bone MRI
-description: Image processing for bone segmentation in MR Images
-img: assets/img/mri_out.jpg
+title: PMB
+description: Power management module for ventilators and anesthesia machines.
+img: assets/img/dicom.JPG
 importance: 6
 category: fun
 ---
 
-The main objective of this project is to segment, i.e. separate the bone from the tissues and other visible matter in the MRI, be it the MRI of the knee, brain, hip, etc. It should be agnostic to the body part in question and automatic, for making the lives of doctors and hospitals easier by enabling them to better understand and to read MRI’s. Using this MRI’s can be used for scanning and testing our bones instead of an X-ray which is harmful given the radiation the subject is exposed to.
+At the core of anaesthesia delivery machines and ventilators, the Power Management Board (PMB) assumes a pivotal role in supplying and monitoring power to critical machine components. Classified as Class A, the PMB demands a meticulously designed system, characterised by an extremely low margin for error. The Power Subsystem encompass the power management board, batteries, AC-DC module, power switch, and system cooling. The AC-DC module converts AC mains supply to regulated DC, while the Power Management Board, comprising both hardware and software, ensures uninterrupted power to other Darwin subsystems. Batteries serve as a backup power source, the Power Switch controls the enabling or disabling of power to the Darwin subsystems, and System Fans dissipate heat. I contributed to design fixes and debugging of the board.
 
-Denoising: The use of histogram equalisation for controlling contrast for effective thresholding is a main part of the de-noising and pre-processing. Because the backgrounds of MRI scans are so noisy and contain significant lighting artifacts, it is important to filter out the background before proceeding with other image processing techniques. Otherwise, the background compromises the effectiveness of these methods. Hence, filtering using a median filter to remove noise is a good method. Both have been implemented for an optimal result.
-
-Method 1: This involves edge detection using Sobel masks. The Sobel operator is employed for conducting a 2-dimensional spatial gradient analysis on an image, accentuating areas with significant spatial frequency, which are indicative of edges. Its typical application involves estimating the absolute gradient magnitude at various locations within a grayscale image input. Then the image is thresholded at a value of 200 to binarize the image. Finally a border clearing function is applied to get rid of the boundary (the skin/surface of the MRI). This gives us the edges of the bones along with a minor remnants from the tissues resulting in body-part-agnostic segmentation without machine learning applications.
-
-Method 2: A simpler implementation for automatic segmentation might use adaptive Otsu thresholding. Otsu's thresholding technique entails a process of systematically examining all potential threshold values. It computes a dispersion metric for the pixel intensities on both sides of the threshold, representing the foreground and background. The objective is to identify the threshold value that minimizes the total spread of foreground and background pixel values. In theory, this would work well to separate the bright trabecular tissue or the dark cortical tissue of the bone from the other tissues. A fudge factor has been introduced which the user can input, the thresholding value will be scaled by that amount if it isn’t satisfactory.
-
-In the various images below, there are four outputs which are respectively the original image, the noisy image, the output of method 1 (Sobel edge detection) and the output of method 2 (Otsu’s thresholding).
+LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
 <div class="img">
-        {% include figure.html path="assets/img/hip_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ARC_proto.jpg" title="Anaesthesia System" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Hip MRI
+    Anaesthesia Delivery and Life Support Device
 </div>
+
+Anchored by the MSP432 microcontroller, the PMB oversees the intricate task of monitoring and controlling the input and output of the power supply subsystem. This includes scrutinizing and regulating power rails, allocating power to eight Safe Power Limit channels, and managing battery operations. Additionally, the PMB acts as a conduit for signal interfacing between the ventilation system, anaesthesia control system, and the display. I architected the communication framework for the entire system and created packets structures for all relevant communications. 
 
 <div class="img">
-        {% include figure.html path="assets/img/brain_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ARC_SWArch.png" title="Software Architecture" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Brain MRI
+    Software Architecture
 </div>
+
+The power subsystem software is integral to monitoring and controlling power input and output for Darwin subsystems. It manages the switch positions, power supply during system startup and shutdown, battery operations, and temperature regulation through fan control. The software is structured into various units, with safety classifications for the Power subsystem Boot Code and Application. Temporal isolation segregates tasks, ensuring clarity and efficiency. Other software tasks, including vaporizer control, watchdog, battery charging, alarm management, IRIS communication, and system management, contribute to the overall functionality. RTOS synchronization modules facilitate inter-task communication and synchronization, enhancing the efficient functioning of the power subsystem software. I worked on all aspects of firmware on the PMB and refined the RTOS implementation to reduce power consumption and improve efficiency of the controller.
 
 <div class="img">
-        {% include figure.html path="assets/img/back_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ARC_Arch.png" title="Test Software Architecture" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Back MRI
+    Test Software Architecture
 </div>
+
+Central to system communication, IRIS plays a crucial role in establishing point-to-point serial communication between subsystems. It also offers a standardized set of communication facilities for subsystem revision/status discovery and software upgrades. Our implementation utilizes a restricted version of IRIS, employing a low-level interface to the UART port for parsing and implementing the communication protocol. To complement PMB's functionality, the PMB tester tool package integrates a LabView based Windows application. This tool seamlessly interacts with the PMB, capturing inputs and displaying test results. Utilizing serial communication channels, the PC tool configures communication parameters, logs data, and establishes the operational mode of the PMB. This comprehensive testing framework ensures the robust functioning of the PMB within the broader system. Within the testing software framework, a user interface is designed to display monitored data and facilitate command inputs. The communication module, responsible for data transfer, accommodates both legacy and new virtual instruments. The Logging Engine processes and transmits string output from the global array to log files, complete with timestamps. Automation of requests within the testing software is executed through dedicated components. The software maintains inactive designs for potential upgrades, and the parameter changes guide offers comprehensive instructions for modifying receive components and configuration files. I worked on and single handedly developed the testing software end to end. The final prototype delivered effective communication and streamlined data processing within the system.
+
 
 <div class="img">
-        {% include figure.html path="assets/img/knee_out.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ARC_LabView.png" title="Test SW UI" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Knee MRI
+    Test SW UI
 </div>
-
-Both the methods give decent results and are able to segment the bones roughly. The issue with
-Otsu’s thresholding is that in areas where the dark cortical tissue
-is lighter, it gets labelled as a bright area, thus connecting the
-bright trabecular and muscle tissues. Also, because the areas of
-connection between bone and muscle tissue are so large at the
-ends of the bones, they cannot be easily split with operations such
-as morphological opening. The Sobel segmentation is cleaner than
-adaptive Otsu segmentation, but like the Otsu method, Sobel
-connects the bone tissue with muscle tissue at the ends of the
-bones where the cortical layer is thin. The noise removal using the
-median filter and also the contrast enhancement using histogram
-equalisation work well for the given application. They are deliver optimal results
-without losing too much detail in the image. Also, in Sobel’s edge
-detection there are fake and weak edges that create a lot of
-confusion for the examiner to understand. 
-
-We also implemented Snakes or commonly known as active contouring. These are like flexible lines that adjust their shape to fit the edges of objects in images. They use both external forces to guide them and internal forces to resist changes in their shape. It is like a way to match a flexible model to an image by finding the best fit with the least energy.

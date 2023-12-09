@@ -1,74 +1,17 @@
 ---
 layout: page
-title: MLR
-description: Grade prediction and analysis using ML
-img: assets/img/mlr.png
+title: COV-AID
+description: Implementing Social Distancing through Technology
+img: assets/img/covaid.png
 importance: 9
 category: fun
 ---
 
-The aim of the project was to help predict the grades of students and in the process analyze various machine learning techniques for the task and classify the best performer. Also performed theorytical analyses on the results to finally reason out the cause for performance differences across techniques. This was my first attempt at machine learning and gave me a holistic understanding of conventional ML techniques.
+We developed an application to monitor real-time crowd counts at public and private establishments like
+hospitals, banks, ATMs, pharmacies and stores. The count of crowd was provided for locations
+within 50km radius. Modules were added to provided the order pickup functionality.
 
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <div class="img">
-            {% include figure.html path="assets/img/mlr_heatmap.png" title="example image" class="img-fluid rounded z-depth-1" %}
-        </div>
-        <div class="caption">
-            Heatmap of correlation values
-        </div>
-    </div>
-</div>
-
-Firstly the data was pre-processed and cleaned. Then a correlation analysis was performed to understand the effect of variables on each other, including the final grades. The heatmap of the correlation values is presented above.
-
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <div class="img">
-            {% include figure.html path="assets/img/mlr_scat.png" title="example image" class="img-fluid rounded z-depth-1" %}
-        </div>
-        <div class="caption">
-            PCA scatter plot
-        </div>
-    </div>
-</div>
-
-Decision tree was the first method used to predict the grades, but the grades were classified into distics categories and the analysis was performed. A decision tree was programmed on R and using the library ‘rpart’ we split the data into 75% training and 25% test data. We trained the tree using the data and we collected the test and training errors using the data sets we have split. We can evaluate performance using these. The same analysis was performed after applying PCA to the decision tree giving much better results.
-
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <div class="img">
-            {% include figure.html path="assets/img/mlr_tree.png" title="example image" class="img-fluid rounded z-depth-1" %}
-        </div>
-        <div class="caption">
-            Decision tree implementation
-        </div>
-    </div>
-</div>
-
-Next, the naive bayes classifier was used. The dataset is divided into two parts, namely, feature matrix and the response vector. Feature matrix contains all the vectors of the dataset in which each vector has the value of dependent features. Response vector contains the value of class variable for each row of feature matrix. The probability densities were mapped and the predictions were made with and without applying PCA.
-
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <div class="img">
-            {% include figure.html path="assets/img/mlr_prob.png" title="example image" class="img-fluid rounded z-depth-1" %}
-        </div>
-        <div class="caption">
-            Probability densities for the features
-        </div>
-    </div>
-</div>
-
-Support vector machines were also implemented with and without the application of PCA and the use of CNN's was evaluated for the purpose of grade prediction. Finally the methods were all compared using accuracies of the predicted grades..
-
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <div class="img">
-            {% include figure.html path="assets/img/mlr_Acc.png" title="example image" class="img-fluid rounded z-depth-1" %}
-        </div>
-        <div class="caption">
-            Accuracies of different techniques
-        </div>
-    </div>
-</div>
-
+The project overview can be seen here:
+{% include youtube.html id="q3DumvxZcGE" %}\
+The demo of the application can be seen here:
+{% include youtube.html id="9G2WwPtMTRg" %}

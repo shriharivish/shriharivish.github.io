@@ -1,100 +1,74 @@
 ---
 layout: page
-title: Incubation
-description: Accelerating culture experiments at TranslaTUM
-img: assets/img/tum.jpg
+title: Novii
+description: Patch based fetal monitoring system
+img: assets/img/nv.png
 importance: 2
 category: work
 ---
 
-Culture is the process where a fragment of biomatter is forced to grow or develop in a tertiary
-medium. Tissue and cell culture are helping pave the way for numerous technological breakthroughs
-and the aim of the thesis is to improve the efficiency with which experiments are conducted. AT TranslaTUM,
-this research is primarily gong to be used to perform rapid cancer drug testing and cell model studies.
+The Novii Monitoring System includes the Novii Patch, a disposable adhesive patch with five electrodes attached to the mother's abdomen. It features a magnetic cradle at its center for the Novii Pod. The Novii Pod, a battery-operated device with Bluetooth and Infrared connectivity, processes signals from the patch to provide Maternal Heart Rate, Fetal Heart Rate, and Uterine Activity. Acting as a wireless bridge, the Novii Interface Module transmits patient data between the Pod and the fetal monitor. The Standalone Pod Charger efficiently charges two Novii+ pods simultaneously, enhancing user convenience. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tum_ot2.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
+
+<div class="img">
+        {% include figure.html path="assets/img/NV_Lotus.png" title="Novii System" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Opentrons OT2 Pipetting Robot
+    Novii Pod and Peripheral Devices
 </div>
 
-The OT-2 from Opentrons is an affordable, easy-to-use pipetting robot that uses
-integrated electronic pipettes to transfer liquids and run experiments. The vision was to build a system where
-incubating a sample for tissue or cell culture would be possible simultaneously after the 
-pipetting is done or alongside the pipetting, all remotely. 
+Designed a Qi compliant dual smart charger for the Novii Pods. Implemented the charging circuitry, foreign object detection with compensation for losses from the pod, and finetuned the vertical stack up and coil to reduce losses. Used magnets on the pod and a hall elect sensor to implement docking detection on the charging bays. Multiple safety features were introduced to prevent any harm in case of overtemperatures or malfunctions. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tum_heater.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="img">
+        {% include figure.html path="assets/img/nv_spc.jpg" title="SPC" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Heating Architecture and Mounting Mechanism
+    Wireless Charger Board
 </div>
 
-An incubator is best represented by a human body in terms of the
-ambient conditions required to help cells and tissues grow. The most
-important factor thus is temperature. The space required to implement
-the additional devices for creating an incubator was restricted due to the
-movement of the robot’s arm. A 800W heater was needed to achieve
-the specified temperature requirement and maintain the control loop
-within the prescribed margin. Given the constraints, a ceramic thin plate
-heater was chosen. I also chose suitable materials and fabricated a rugged mounting
-mechanism to withstand and isolate the heat over long periods of time.
-I thereafter, architected the circulation system for even distribution of
-heat in the chamber.
+Designed an IR and Bluetooth module for enabling seamless communication between the Novii pods and next generation fetal monitors. Ensured miniaturisation of the interface and thermal performance given high data rates being used to transmit information wirelessly. Solved issues with IR pairing ranges due to attenuating media, Bluetooth range of communication, and LED driver optimization for reducing current consumption.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tum_humidity.png" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/nv_nim.jpg" title="NIM" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            IR-Bluetooth-USB Interface
+        </div>
     </div>
 </div>
+
+Part of the team that introduced the algorithm improvement to include pre term labour monitoring for the Novii line of products. The fetal heart rate counting algorithm was improved and signal conditioning blocks were optimized. Also contributed heavily to the biostatistical analyses and the clinical trials to prove the efficacy of the improved Novii (510k). Improved the hardware by implementing a power reduction technique using sleep mode and added an accelerometer to trigger wakeup.
+
+<div class="img">
+        {% include figure.html path="assets/img/NV-Trials.png" title="Clinical Trials" class="img-fluid rounded z-depth-1" %}
+</div>
 <div class="caption">
-    Humidity Control
+    Clinical Trials
 </div>
 
-The next parameter to be addressed was humidity control so as to
-preserve the osmolarity of the culture samples. To achieve this glass
-washing flasks were used. Gas washing flasks are used to wet/ humidify gases by exposing
-them to water. When the gas from the inlet pipe reaches the bottom of a filled flask it rises up
-in bubbles and along the way picks up water particles and then exits via the exit pipe. In
-principle, it is almost the same as a water bath humidifier. I implemented the arrangement using a
-vacuum gas pump that pumped the gas to the bottom of the water filled
-flask. By suitably designing the flow rate and quantity of water used, the
-incubator humidity can be controlled. A three flask configuration in
-series was designed to maximise the efficiency of the system.
+I have contributed to various regular engineering activities. I helped design the automated test equipment for the manufacturing line, completed vitality analyses and made cost improvements to the bill of materials. I also interacted with suppliers and customers regularly to solve issues on the line and in the field.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tum_sendsor.png" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/NV_ATE.jpg" title="ATE" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            Automated Test and Calibration Equipment
+        </div>
     </div>
 </div>
-<div class="caption">
-    SENDSOR Gmbh Prototype
-</div>
 
-The last control implemented was for CO2 in the chamber. I worked with SENDSOR Gmbh to integrate their flow based
-CO2 sensor into the chamber for implementing closed loop control of the same. We ran intial testing of the sensor and
-my integrated system for the CO2 level readout at the SENDSOR headqurters in Munich. I created an inlet in the chamber
-and added a electronically controlled pneumatic switch to control the flow of CO2 into the chamber.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tum_pid.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+The internship project involved integrating Near Field Communication (NFC) and Bluetooth for wireless data exchange. NFC enables secure close-range transactions to facilitate Bluetooth pairing to enable broader connectivity. Implemented using Arduino, HC-05 Bluetooth modules, and the PN532 NFC reader/writer, the model comprises three Arduinos, three Bluetooth modules, two NFC tags, and one NFC reader. I successfully demonstrated the feasibility and improved functionality of the pods, thus influencing future roadmaps to incorporate Bluetooth Low Energy (BLE) for energy efficiency, exploring Out-of-Band (OOB) pairing for security, and data encoding for increased privacy. 
+
+
+<div class="img">
+        {% include figure.html path="assets/img/NV_InternWorkflow.png" title="Workflow" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Multiparametric PID Control on Arduino
+    Workflow for Smart Sensor Pairing
 </div>
-
-Finally, I integrated the sub-systems onto an Arduino and implemented
-a multi-parametric PID control loop with inter-dependent variables. This
-complex implementation within constrained timelines required a good
-amount of effort to fine tune the system. I was able to demonstrate the
-performance of the incubator and control system within the assigned
-duration of my time in Germany. Other than my thesis work,
-I also wrote scripts to help others automate their work on the Opentrons
-and was the first person to get the system up and running. 
