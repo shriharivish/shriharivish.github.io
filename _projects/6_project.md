@@ -2,7 +2,7 @@
 layout: page
 title: PMB
 description: Power management module for ventilators and anesthesia machines.
-img: assets/img/dicom.JPG
+img: assets/img/ARC.png
 importance: 6
 category: fun
 ---

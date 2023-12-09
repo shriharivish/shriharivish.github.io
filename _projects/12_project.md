@@ -13,11 +13,6 @@ Started off with a market analysis and survey to help understand the potential o
 
 The innovative setup of the tea vending machine incorporates a vertically movable filter that descends into the tea-making chamber, housing various components such as tea leaves, masala, sugar, water, and milk containers. Different pipes channel their contents into a funnel connected to the filter, initiating the tea-making process. The filter, once inside the container, facilitates proper heating of all ingredients. After 3-4 minutes, the filtering unit ascends, leaving only used tea leaves behind.
 
-The machine's operation is orchestrated by a microcontroller, ensuring precision at each stage. From pumping water and regulating temperature to adding tea leaves, sugar, and masala with servo motors, the entire process is automated. The innovative aspects of the solution include the preparation of authentic tea, enhancing taste appeal. Moreover, the cost-effectiveness of the machine, to be priced at Rs. 3500, makes it accessible to middle-class families and beyond. Its widespread applicability caters to individuals from various demographics, including bachelors, couples, and the elderly, providing homemade tea with minimal effort.
-
-The impact of the solution extends to addressing prevalent issues in the tea consumption landscape. It tackles the wastage of time and energy in manual tea preparation, health concerns related to vending machine tea, dissatisfaction with taste, and the absence of affordable and user-friendly household vending machines. By automating the tea-making process, the solution aligns with the preferences and lifestyles of a large section of modern society, aiming to revolutionize the tea consumption experience for millions.
-
-
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/iic_filter.png" title="Filter" class="img-fluid rounded z-depth-1" %}
@@ -27,6 +22,7 @@ The impact of the solution extends to addressing prevalent issues in the tea con
    Filter Design on SolidWorks
 </div>
 
+The machine's operation is orchestrated by a microcontroller, ensuring precision at each stage. From pumping water and regulating temperature to adding tea leaves, sugar, and masala with servo motors, the entire process is automated. The innovative aspects of the solution include the preparation of authentic tea, enhancing taste appeal. Moreover, the cost-effectiveness of the machine, to be priced at Rs. 3500, makes it accessible to middle-class families and beyond. Its widespread applicability caters to individuals from various demographics, including bachelors, couples, and the elderly, providing homemade tea with minimal effort.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -37,6 +33,7 @@ The impact of the solution extends to addressing prevalent issues in the tea con
    System Design for Vending Machine
 </div>
 
+The impact of the solution extends to addressing prevalent issues in the tea consumption landscape. It tackles the wastage of time and energy in manual tea preparation, health concerns related to vending machine tea, dissatisfaction with taste, and the absence of affordable and user-friendly household vending machines. By automating the tea-making process, the solution aligns with the preferences and lifestyles of a large section of modern society, aiming to revolutionize the tea consumption experience for millions.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
