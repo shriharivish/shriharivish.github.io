@@ -20,17 +20,21 @@ LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
 Anchored by the MSP432 microcontroller, the PMB oversees the intricate task of monitoring and controlling the input and output of the power supply subsystem. This includes scrutinizing and regulating power rails, allocating power to eight Safe Power Limit channels, and managing battery operations. Additionally, the PMB acts as a conduit for signal interfacing between the ventilation system, anaesthesia control system, and the display. I architected the communication framework for the entire system and created packets structures for all relevant communications. 
 
-<div class="img">
-        {% include figure.html path="assets/img/ARC_SWArch.png" title="Software Architecture" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Software Architecture
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/ARC_SWArch.png" title="Software Architecture" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            Software Architecture
+        </div>
+    </div>
 </div>
 
 The power subsystem software is integral to monitoring and controlling power input and output for Darwin subsystems. It manages the switch positions, power supply during system startup and shutdown, battery operations, and temperature regulation through fan control. The software is structured into various units, with safety classifications for the Power subsystem Boot Code and Application. Temporal isolation segregates tasks, ensuring clarity and efficiency. Other software tasks, including vaporizer control, watchdog, battery charging, alarm management, IRIS communication, and system management, contribute to the overall functionality. RTOS synchronization modules facilitate inter-task communication and synchronization, enhancing the efficient functioning of the power subsystem software. I worked on all aspects of firmware on the PMB and refined the RTOS implementation to reduce power consumption and improve efficiency of the controller.
 
 <div class="img">
-        {% include figure.html path="assets/img/ARC_Arch.png" title="Test Software Architecture" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ARC_Arch.PNG" title="Test Software Architecture" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Test Software Architecture
@@ -40,8 +44,8 @@ Central to system communication, IRIS plays a crucial role in establishing point
 
 
 <div class="img">
-        {% include figure.html path="assets/img/ARC_LabView.png" title="Test SW UI" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/ARC_LabView.jpg" title="Test SW UI" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
-    Test SW UI
+    Test Software UI
 </div>
