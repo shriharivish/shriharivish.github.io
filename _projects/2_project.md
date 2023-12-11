@@ -41,12 +41,21 @@ Designed an IR and Bluetooth module for enabling seamless communication between 
 </div>
 
 Part of the team that introduced the algorithm improvement to include pre term labour monitoring for the Novii line of products. The fetal heart rate counting algorithm was improved and signal conditioning blocks were optimized. Also contributed heavily to the biostatistical analyses and the clinical trials to prove the efficacy of the improved Novii (510k). Improved the hardware by implementing a power reduction technique using sleep mode and added an accelerometer to trigger wakeup.
-
-<div class="img">
         {% include figure.html path="assets/img/NV_Trials.png" title="Clinical Trials" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
     Clinical Trials
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="img">
+            {% include figure.html path="assets/img/NV_Trials.png" title="Clinical Trials" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="caption">
+            Clinical Trials
+        </div>
+    </div>
 </div>
 
 I have contributed to various regular engineering activities. I helped design the automated test equipment for the manufacturing line, completed vitality analyses and made cost improvements to the bill of materials. I also interacted with suppliers and customers regularly to solve issues on the line and in the field.
