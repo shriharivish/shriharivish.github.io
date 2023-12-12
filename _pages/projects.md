@@ -2,7 +2,7 @@
 layout: page
 title: Portfolio
 permalink: /
-description: Unifying sensing, electronics and computing to develop solutions that impact health and society.
+description: Unifying sensing, electronics and computing to develop comprehensive solutions that impact health and society.
 #display_categories: [work, fun]
 horizontal: false
 social: true
