@@ -15,7 +15,7 @@ category: work
             border: 2px solid #000000; /* Border color */
             padding: 20px; /* Padding inside the box */
             border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for a subtle lift */
             max-width: 800px; /* Maximum width of the box */
             text-align: center;
         }
