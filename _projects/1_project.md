@@ -7,6 +7,31 @@ importance: 1
 category: work
 ---
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .info-box {
+            padding: 20px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+            max-width: 800px; /* Maximum width of the box */
+            text-align: center;
+        }
+        .info-box p {
+            margin: 0; /* Remove default margin for better spacing */
+        }
+    </style>
+</head>
+
+<div class="info-box">
+ <h3><b>Abstract</b></h3>
+<p>
+The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. I have worked on and delivered the soon-to-be-released portable fetal monitor, the successor to the Corometrics 250 series, which is the gold standard to date. Notably, we've achieved a significant breakthrough by successfully miniaturizing the entire Corometrics into the small sensor while improving on its performance. I am currently architecting next-generation wireless fetal sensors and systems for GE HealthCare, market leaders in the segment. Designed for safe and continuous monitoring, the sensor operates with extremely low acoustic outputs, thus requiring extremely high sensitivity to operate across diverse populations. I have also worked on enabling triplet and quadruplet monitoring, dealing with the complexity of multiple interchangeable sensors and crosstalk.
+</p></div> 
+<br>
+
+
 The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. It is responsible for the generation of the Transmit Acoustic Signal, receiving the reflected signal from one of the fetuses, as well as the processing of the signal, determination of the fetal heart rate, and finally the transmission of the fetal heartbeat information to the fetal monitor digitally. The module is a low power sensor designed to be operated continuously for over a day because of which the transmit power of the ultrasound needed to be very low. High transmit powers can lead to heating of tissues potentially harming the mother and the baby. The major complexity of design here is driven by sensitivity given the low acoustic output coupled with the acoustic attenuation due to human skin, fat and the interface. The other complexity is that this is a multiple transducer system leading to various types of crosstalk causing signal confusion, interference, and noise. We have also performed extensive miniaturisation of the electronics to accommodate all the electronics in this small sensor instead of the large Corometrics device.
 
 LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
