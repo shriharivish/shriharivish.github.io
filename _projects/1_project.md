@@ -12,6 +12,7 @@ category: work
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .info-box {
+            border: 2px solid #000000; /* Border color */
             padding: 20px; /* Padding inside the box */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
