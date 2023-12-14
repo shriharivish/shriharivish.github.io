@@ -35,9 +35,8 @@ The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It e
 LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
 <br>
-<br>
 
-<h3>Transmit Section</h3>
+<h5>Transmit Section</h5>
 
 Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal given stringent heat dissipation requirements in an IP68 device. I have also designed the calibration process to ensure identical acoustic powers across sensors overcoming process variations in manufacturing.
 
