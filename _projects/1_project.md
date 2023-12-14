@@ -32,9 +32,6 @@ The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It e
 </p></div> 
 <br>
 
-
-The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. It is responsible for the generation of the Transmit Acoustic Signal, receiving the reflected signal from one of the fetuses, as well as the processing of the signal, determination of the fetal heart rate, and finally the transmission of the fetal heartbeat information to the fetal monitor digitally. The module is a low power sensor designed to be operated continuously for over a day because of which the transmit power of the ultrasound needed to be very low. High transmit powers can lead to heating of tissues potentially harming the mother and the baby. The major complexity of design here is driven by sensitivity given the low acoustic output coupled with the acoustic attenuation due to human skin, fat and the interface. The other complexity is that this is a multiple transducer system leading to various types of crosstalk causing signal confusion, interference, and noise. We have also performed extensive miniaturisation of the electronics to accommodate all the electronics in this small sensor instead of the large Corometrics device.
-
 LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
 <div class="img">
@@ -45,6 +42,8 @@ LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 </div>
 
 Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal as heat dissipation was a problem due to the IP68 requirements of the sensor.
+
+ It is responsible for the generation of the Transmit Acoustic Signal, receiving the reflected signal from one of the fetuses, as well as the processing of the signal, determination of the fetal heart rate, and finally the transmission of the fetal heartbeat information to the fetal monitor digitally.
 
 <div class="img">
         {% include figure.html path="assets/img/uls_sensdpc.jpg" title="Sensitivity Improvement" class="img-fluid rounded z-depth-1" %}
