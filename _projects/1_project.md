@@ -34,6 +34,11 @@ The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It e
 
 LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
 
+
+<h3>Transmit Section</h3>
+
+Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal given stringent heat dissipation requirements in an IP68 device. I have also designed the calibration process to ensure identical acoustic powers across sensors overcoming process variations in manufacturing.
+
 <div class="img">
         {% include figure.html path="assets/img/uls_tx.jpg" title="Transmit Pulse Shape Improvement" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -41,7 +46,6 @@ LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
     Transmit Pulse Shape Improvement
 </div>
 
-Designed a new boost converter adapted transmit circuitry to optimise for power draw on the sensor. Used a charge pump mechanism to deliver consistent power output throughout the transmit pulse which drastically improves the sensitivity and lower depths. Tapering was a problem plaguing the predicate causing inconsistencies in the pickup at varied depths which was solved eventually in the new design. Optimised the circuit for space and ensured thermal loss was minimal as heat dissipation was a problem due to the IP68 requirements of the sensor.
 
  It is responsible for the generation of the Transmit Acoustic Signal, receiving the reflected signal from one of the fetuses, as well as the processing of the signal, determination of the fetal heart rate, and finally the transmission of the fetal heartbeat information to the fetal monitor digitally.
 
