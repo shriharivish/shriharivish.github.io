@@ -32,9 +32,7 @@ The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It e
 </p></div> 
 <br>
 
-LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.
-
-<br>
+<b>LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.</b>
 
 <h4>Transmit Section</h4>
 
