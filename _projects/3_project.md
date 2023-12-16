@@ -44,7 +44,7 @@ We chose photoplethysmography as the technique for cost-effective non-invasive m
     Spectral Analysis of Sensor
 </div>
 
-<h4>ANalog Design</h4>
+<h4>Analog Design</h4>
 
 To improve sensitivity of the electronics I designed a transimpedance amplification circuitry to minimize bias current requirements and then added an extra gain stage to get a signal output that can be read by low power ADC's. Then I designed high order bandpass and notch filters to remove the unwanted frequencies and noises being transmitted through the signal chain. I used multifeedback bandpass filter due to the space constraints we faced and to maximize the effect of filtering. The 50Hz powerline noise in the system was overwhelming the signal and I had to design a twin-t notch filter to maximise the attenuation of 50Hz and 60Hz noise to generate a clean signal finally. Given the low sampling rates of most low power ADC's using digital filtering to remove this noise was going to be tricky too. 
 
