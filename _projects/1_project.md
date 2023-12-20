@@ -28,7 +28,7 @@ category: work
 <div class="info-box">
  <h4><b>Abstract</b></h4>
 <p>
-The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. I have worked on and delivered the soon-to-be-released portable fetal monitor, the successor to the Corometrics 250 series, which is the gold standard to date. Notably, we've achieved a significant breakthrough by successfully miniaturizing the entire Corometrics into the small sensor while improving on its performance. I am currently architecting next-generation wireless fetal sensors and systems for GE HealthCare, market leaders in the segment. Designed for safe and continuous monitoring, the sensor operates with extremely low acoustic outputs, thus requiring extremely high sensitivity to operate across diverse populations. I have also worked on enabling triplet and quadruplet monitoring, dealing with the complexity of multiple interchangeable sensors and crosstalk.
+The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. I have worked on and delivered the soon-to-be-released portable fetal monitor, the successor to the Corometrics 250 series, which is the gold standard currently. Notably, we've achieved a significant breakthrough by successfully miniaturizing (0.1x) the entire Corometrics device into a small sensor while also improving on its performance. Designed for safe and continuous monitoring, the sensor operates with extremely low acoustic outputs, thus requiring extremely high sensitivity to operate across diverse populations. I have also worked on enabling triplet and quadruplet monitoring, dealing with the complexity of multiple interchangeable sensors and crosstalk. I am currently architecting next-generation wireless fetal sensors and systems for GE HealthCare, market leaders in the segment. 
 </p></div> 
 <br>
 
@@ -47,9 +47,9 @@ Designed a new boost converter adapted transmit circuitry to optimise for power 
 
 
 
-<h4>Recieve Section</h4>
+<h4>Receive Section</h4>
 
-The receive circuitry was drastically changed from the predicate as well. We introduced a tunable impedance element for maximising noiseless gain in the system and regularising gain across sensors despite manufacturing variabilities. The sensitivity was also improved drastically by redesigning the front end for low bias currents and higher input impedances preventing smaller signals from being dissipated. I introduced a new demodulation strategy for miniaturisation, performed gain rebalancing across the entire signal chain, optimised the RF amplifiers to accommodate the appropriate bandwidth, redesigned the high-order filters and introduced a mixer circuitry to accommodate for two channel sensing using one single ADC. I also drastically improved the noise performance of the sensor. 
+Major design changes were made to the receive circuitry as compared to the predicate. We introduced a tunable impedance element for maximising noiseless gain in the system and regularising gain across sensors despite manufacturing variabilities. The sensitivity was also improved drastically by redesigning the front end for low bias currents and higher input impedances preventing smaller signals from being dissipated. I introduced a new demodulation strategy for miniaturisation, performed gain rebalancing across the entire signal chain, optimised the RF amplifiers to accommodate the appropriate bandwidth, redesigned the high-order filters and introduced a mixer circuitry to accommodate for two channel sensing using one single ADC. I also drastically improved the noise performance of the sensor. 
 
 <div class="img">
         {% include figure.html path="assets/img/uls_sensdpc.jpg" title="Sensitivity Improvement" class="img-fluid rounded z-depth-1" %}
@@ -72,7 +72,7 @@ The receive circuitry was drastically changed from the predicate as well. We int
 
 <h4>Clocking Section</h4>
 
-Clock jitter is critical to performance of the ultrasound. Due to the way we demodulate in the RF domain, jitter can critically affect our noise levels as we even demodulate the directly reflected signals that are transmitted by the transducer. Jitter would mean we transmit one frequency and demodulate that very wave with a slightly different frequency giving rise to harmonics in our band of operation and thus an unwanted noise in our system. Need to meet jitter spec under 100ps given the sensitivity of the device. I’ve come up with an innovative low-cost low power solution to generate reconfigurable clock frequencies down to a 1Hz precision meeting the stringent jitter requirements of the system. This has majorly helped minimise all crosstalk effects.
+Clock jitter is critical to performance of the ultrasound. Due to the way we demodulate in the RF domain, jitter can critically affect our noise levels as we even demodulate the directly reflected signals that are transmitted by the transducer. Jitter would mean we transmit one frequency and demodulate that very wave with a slightly different frequency giving rise to harmonics in our band of operation and thus an unwanted noise in our system. Need to meet jitter spec under 100ps given the sensitivity of the device. I’ve come up with an innovative low-cost low power solution to generate reconfigurable clock frequencies down to a 1Hz precision meeting the stringent jitter requirements of the system. This has immensely helped minimise all crosstalk effects.
 
 <div class="img">
         {% include figure.html path="assets/img/uls_noise.png" title="Noise Levels" class="img-fluid rounded z-depth-1" %}
@@ -91,7 +91,7 @@ Clock jitter is critical to performance of the ultrasound. Due to the way we dem
 
 <h4>Crosstalk and Algorithms</h4>
 
-Our crosstalk challenges involve intricacies such as the interplay of Nyquist theory in choosing frequencies. The need for tight tolerance in Pulse Repetition Rate (PRR) becomes crucial, as mismatched PRRs can generate unwanted signals. Imperfect frequency differences in modulation between transducers result in complex harmonics, emphasizing the necessity for tight frequency tolerance. Additionally, crosstalk with large signals can lead to clipping, causing a marginal reduction in sensitivity. I have come up with techniques to handle all these effects of having multiple transducers on a mother and have demostrated performance equivalence ith a single standalone sensor.
+Our crosstalk challenges involve intricacies such as the interplay of Nyquist theory in choosing frequencies. The need for tight tolerance in Pulse Repetition Rate (PRR) becomes crucial, as mismatched PRRs can generate unwanted signals. Imperfect frequency differences in modulation between transducers result in complex harmonics, emphasizing the necessity for tight frequency tolerance. Additionally, crosstalk with large signals can lead to clipping, causing a marginal reduction in sensitivity. I have come up with techniques to handle all these effects of having multiple transducers on a mother and have demonstrated performance equivalence with a single standalone sensor.
 
 
 <div class="img">
@@ -124,7 +124,7 @@ I have designed the automatic gain control block in the DSP core of the microcon
 
 <h4>Transducer Optimisation</h4>
 
-To tackle process issues related to manufacturing of the transducer and the glueing involved I started modelling the PZT being used and the fully assembled transducer. Started out with fitting the FEM parameters using off the shelf PZT’s available publicly. Due to coupling of the radial and thickness mode there were considerable complexities in modelling. All parameters had to be fine tuned to match the measurements made in the lab. After assembly there was a significant change in the characteristics of the transducers because of the processes involved and the next stage was to model this. The plastics and glue were then integrated into the model next. This model was again tested with the assembled transducers and parameters were fine tuned here again. To understand the effect due to process variability of glueing, the thickness was varied, and the simulations were performed to evaluate performance across a large batch of manufactured transducers.
+To tackle process issues related to manufacturing of the transducer and the glueing involved I started modelling the PZT being used and the fully assembled transducer. Started out with fitting the FEM parameters using off the shelf PZT’s available publicly. Due to coupling of the radial and thickness mode there were considerable complexities in modelling. All parameters had to be fine-tuned to match the measurements made in the lab. After assembly there was a significant change in the characteristics of the transducers because of the processes involved and the next stage was to model this. The plastics and glue were then integrated into the model next. This model was again tested with the assembled transducers and parameters were fine tuned here again. To understand the effect due to process variability of glueing, the thickness was varied, and the simulations were performed to evaluate performance across a large batch of manufactured transducers.
 
 <div class="img">
         {% include figure.html path="assets/img/uls_gluemodel.jpg" title="Transducer Model" class="img-fluid rounded z-depth-1" %}
