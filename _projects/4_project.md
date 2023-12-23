@@ -30,7 +30,7 @@ category: work
 <p>
 Culture is the process where a fragment of biomatter is forced to grow or develop in a tertiary
 medium. Tissue and cell culture are helping pave the way for numerous technological breakthroughs
-and the aim of the work is to improve the efficiency with which experiments are conducted. I conducted this research at Dr. Oliver Hayden's lab for biomedical electronics as part of my bachelor's thesis at TranslaTUM, TU Munich, Germany. AT TranslaTUM,
+and the work aims to improve the efficiency with which experiments are conducted. I conducted this research at Dr. Oliver Hayden's lab for biomedical electronics as part of my bachelor's thesis at TranslaTUM, TU Munich, Germany. AT TranslaTUM,
 this research is primarily going to accelerate cancer drug testing and cell model studies. I constructed a chamber equipped with necessary actuation mechanisms using the Opentrons OT-2. Subsequently, I implemented a real-time feedback sensing system for monitoring ambient parameters. I collaborated with Sendsor GmbH on their prototype flow-based CO2 sensor. Finally, I integrated the entire system with a MIMO control system, and optimized system parameters to achieve a fivefold increase in assay throughput.
 </p></div> 
 <br>
@@ -40,7 +40,8 @@ this research is primarily going to accelerate cancer drug testing and cell mode
 The OT-2 from Opentrons is an affordable, easy-to-use pipetting robot that uses
 integrated electronic pipettes to transfer liquids and run experiments. The vision was to build a system where
 incubating a sample for tissue or cell culture would be possible simultaneously after the 
-pipetting is done or alongside the pipetting, all remotely. I was the first person in the lab to set it up and get the robot up and running. I also wrote multiple scripts to help automate pipetting experiments in the lab.
+pipetting is done or alongside the pipetting, all remotely. I installed the newly acquired system and got
+it up and running. I also wrote multiple scripts to help automate pipetting experiments in the lab.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -57,11 +58,11 @@ An incubator is best represented by a human body in terms of the
 ambient conditions required to help cells and tissues grow. The most
 important factor thus is temperature. The space required to implement
 the additional devices for creating an incubator was restricted due to the
-movement of the robot’s arm. A 800W heater was needed to achieve
+movement of the robot’s arm. An 800W heater was needed to achieve
 the specified temperature requirement and maintain the control loop
 within the prescribed margin. Given the constraints, a ceramic thin plate
 heater was chosen. I also chose suitable materials and fabricated a rugged mounting
-mechanism to withstand and isolate the heat over long periods of time.
+mechanism to withstand and isolate the heat over long durations.
 I thereafter, architected the circulation system for even distribution of
 heat in the chamber.
 
@@ -84,9 +85,8 @@ them to water. When the gas from the inlet pipe reaches the bottom of a filled f
 in bubbles and along the way picks up water particles and then exits via the exit pipe. In
 principle, it is almost the same as a water bath humidifier. I implemented the arrangement using a
 vacuum gas pump that pumped the gas to the bottom of the water filled
-flask. By suitably designing the flow rate and quantity of water used, the
-incubator humidity can be controlled. A three flask configuration in
-series was designed to maximise the efficiency of the system.
+flask. By suitably designing the flow rate and quantity of water used, humidity in the incubator 
+can be controlled. A three-flask configuration in series was designed to maximise the efficiency of the system.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -99,10 +99,8 @@ series was designed to maximise the efficiency of the system.
 
 <h4>Incubation - CO2</h4>
 
-The last control implemented was for CO2 in the chamber. I worked with SENDSOR Gmbh to integrate their flow based
-CO2 sensor into the chamber for implementing closed loop control of the same. We ran intial testing of the sensor and
-my integrated system for the CO2 level readout at the SENDSOR headqurters in Munich. I created an inlet in the chamber
-and added a electronically controlled pneumatic switch to control the flow of CO2 into the chamber.
+The last control implemented was for CO2 in the chamber. I worked with SENDSOR Gmbh, a Munich based startup, to integrate their flow based CO2 sensor into the chamber for implementing the closed loop control. The initial testing of the sensor integrated with the control system was undertaken at the SENDSOR headquarters. I created an inlet in the chamber
+and added an electronically controlled pneumatic switch to control the flow of CO2 into the chamber.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -118,7 +116,7 @@ and added a electronically controlled pneumatic switch to control the flow of CO
 Finally, I integrated the sub-systems onto an Arduino and implemented
 a multi-parametric PID control loop with inter-dependent variables. This
 complex implementation within constrained timelines required a good
-amount of effort to fine tune the system. I was able to demonstrate the
+amount of effort to fine-tune the system. I was able to demonstrate the
 performance of the incubator and control system within the assigned
 duration of my time in Germany. Other than my thesis work,
 I also wrote scripts to help others automate their work on the Opentrons
