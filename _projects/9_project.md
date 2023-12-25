@@ -7,9 +7,33 @@ importance: 9
 category: fun
 ---
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .info-box {
+            border: 2px solid #000000; /* Border color */
+            padding: 20px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for a subtle lift */
+            max-width: 800px; /* Maximum width of the box */
+            text-align: center;
+        }
+        .info-box p {
+            margin: 0; /* Remove default margin for better spacing */
+        }
+    </style>
+</head>
+
+<div class="info-box">
+ <h4><b>Abstract</b></h4>
+<p>
 We developed an application to monitor real-time crowd counts at public and private establishments like
 hospitals, banks, ATMs, pharmacies and stores. The count of crowd was provided for locations
-within 50km radius. Modules were added to provided the order pickup functionality.
+within 50km radius. Modules were added to provided the order pickup functionality. The solution consisted of a user facing application, a shopkeeper facing application and the backend that handled real time data seamlessly.
+</p></div> 
+<br>
 
 The project overview can be seen here:
 {% include youtube.html id="q3DumvxZcGE" %}\
