@@ -31,7 +31,7 @@ category: fun
 <p>
 We developed an application to monitor real-time crowd counts at public and private establishments like
 hospitals, banks, ATMs, pharmacies and stores. The count of crowd was provided for locations
-within 50km radius. Modules were added to provided the order pickup functionality. The solution consisted of a user facing application, a shopkeeper facing application and the backend that handled real time data seamlessly.
+within 50km radius. Modules were added to provided the order pickup functionality. The solution consisted of a public-user facing application, a service-provider facing application and the backend that handled all the real time data seamlessly.
 </p></div> 
 <br>
 
