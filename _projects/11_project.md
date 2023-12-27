@@ -29,17 +29,17 @@ category: fun
 <div class="info-box">
  <h4><b>Abstract</b></h4>
 <p>
-A tool providing Machine Learning and Signal Processing based algorithms 
+A tool providing Machine Learning and signal processing based algorithms 
 for observation of a system over time using periodically sampled dynamic 
 response measurements from an array of sensors. These tools aid in the extraction of
-damage senstitive features in structures which are then statistically analysed. Tool was impelmented on python.
+damage sensitive features in structures which are then statistically analysed. The tool was implemented on python.
 </p></div> 
 <br>
 
 <h4>Signal Processing Methods</h4>
 1. FFT; Custom Recursive Cooley FFT implementation from scratch and Cooley Tukey FFT implementation
 from the numpy fft library.
-2. CWT: Haar wavelet based transforms implemented. Also performed signal reconstruction
+2. CWT: Haar wavelet-based transforms implemented. Also performed signal reconstruction
 and denoising using a successive DWT and IDWT implementation.
 
 <h4>Methods of Smoothing</h4>

@@ -29,13 +29,13 @@ category: fun
 <div class="info-box">
  <h4><b>Abstract</b></h4>
 <p>
-In a society where working professionals grapple with hectic schedules, the demand for a quick and budget-friendly tea break is unmistakable. Existing tea vending machines often compromise on quality and affordability, particularly for middle-class families. The Chai-Tea vending machine addresses these concerns by offering authentic Indian tea preparation, promoting both health benefits and an appealing taste. What distinguishes it is its affordability, making it accessible to a broader demographic. This can also provide a convenient solution for the elderly, allowing them to enjoy a cup of tea with a simple press of a button. 
+In a society where working professionals grapple with hectic schedules, the demand for a quick and budget-friendly tea break is unmistakable. Existing tea vending machines often compromise on quality and affordability. The Chai-Tea vending machine addresses these concerns by offering authentic Indian tea preparation, promoting both health benefits and an appealing taste. What distinguishes it is its affordability, making it accessible to a broader demographic. This can also provide a convenient solution for the elderly, allowing them to enjoy a cup of tea with a simple press of a button. 
 </p></div> 
 <br>
 
 
 <h4>Need Identification and Market Analysis</h4>
-Started off with a market analysis and survey to help understand the potential of such an innovationm made estimations on the total addressable market, serviceable adressable market, revenue and profits. Followed on by analyzing the existing landscape of product offerings and alternatives, we took a closer look at the customer being addressed and the specific needs to be taken up for the prototype development. We also came up with a business model and ideated distribution channels to optimize for revenue and lower the cost of the product for the end user. 
+Started off with a market analysis and survey to help understand the potential of such an innovation made estimations on the total addressable market, serviceable addressable market, revenue and profits. Followed it up by analyzing the existing landscape of product offerings and alternatives, we took a closer look at the customer being addressed and the specific needs to be taken up for the prototype development. We also came up with a business model and ideated distribution channels to optimize for revenue and lower the cost of the product for the end user. 
 
 <h4>High Level Architecture</h4>
 The innovative setup of the tea vending machine incorporates a vertically movable filter that descends into the tea-making chamber, housing various components such as tea leaves, masala, sugar, water, and milk containers. Different pipes channel their contents into a funnel connected to the filter, initiating the tea-making process. The filter, once inside the container, facilitates proper heating of all ingredients. After 3-4 minutes, the filtering unit ascends, leaving only used tea leaves behind.
@@ -50,7 +50,7 @@ The innovative setup of the tea vending machine incorporates a vertically movabl
 </div>
 
 <h4>Hardware Control</h4>
-The machine's operation is orchestrated by a microcontroller, ensuring precision at each stage. From pumping water and regulating temperature to adding tea leaves, sugar, and masala with servo motors, the entire process is automated. The innovative aspects of the solution include the preparation of authentic tea, enhancing taste appeal. Moreover, the cost-effectiveness of the machine, to be priced at Rs. 3500, makes it accessible to middle-class families and beyond. Its widespread applicability caters to individuals from various demographics, including bachelors, couples, and the elderly, providing homemade tea with minimal effort.
+The machine's operation is orchestrated by a microcontroller, ensuring precision at each stage. From pumping water and regulating temperature to adding tea leaves, sugar, and masala with servo motors, the entire process is automated. The innovative aspects of the solution include the preparation of authentic Indian style tea and thereby enhancing taste appeal. Moreover, the cost-effectiveness of the machine, to be priced at Rs. 3500, makes it accessible to middle-class families and beyond. Its widespread applicability caters to individuals from various demographics, including bachelors, couples, small offices and the elderly, providing homemade tea with minimal effort.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
