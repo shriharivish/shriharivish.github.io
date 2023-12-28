@@ -32,7 +32,7 @@ The Novii Monitoring System includes the Novii Patch, a disposable adhesive patc
 </p></div> 
 <br>
 
-<b>LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.</b>
+<i>NOTE: This article documents a small subset of the work done and my contributions to the project so as to not disclose GE's confidential information.</i>
  
 <div class="img">
         {% include figure.html path="assets/img/NV_Lotus.png" title="Novii System" class="img-fluid rounded z-depth-1" %}

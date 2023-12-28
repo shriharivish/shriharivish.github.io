@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio
+title: Shrihari Viswanath's Portfolio
 permalink: /
 description: Unifying sensing, electronics and computing to develop comprehensive solutions that impact health and society.
 #display_categories: [work, fun]

@@ -29,7 +29,7 @@ category: fun
 <div class="info-box">
  <h4><b>Abstract</b></h4>
 <p>
-The main objective of this project is to segment, i.e. separate the bone from the tissues and other visible matter in the MRI (knee, brain, hip, etc). It should be agnostic to the body part in question and automatic, making the lives of doctors and hospitals easier by enabling them to better understand and to read MRIs. Using this MRIs can be used for scanning and testing our bones instead of an X-ray X-ray, thereby avoiding harmful effects of radiation on the patients. Designed a heuristic thresholding edge detection algorithm and an active contouring-based algorithm on MATLAB.
+The main objective of this project is to segment, i.e. separate the bone from the tissues and other visible matter in the MRI (knee, brain, hip, etc). It should be agnostic to the body part in question and automatic, making the lives of doctors and hospitals easier by enabling them to better understand and to read MRIs. Using this MRIs can be used for scanning and testing our bones instead of an X-ray, thereby avoiding harmful effects of radiation on the patients. Designed a heuristic thresholding edge detection algorithm and an active contouring-based algorithm on MATLAB.
 </p></div> 
 <br>
 

@@ -33,6 +33,9 @@ The aim of the project was to help predict the grades of students and in the pro
 </p></div> 
 <br>
 
+<h4>Correlation Analysis</h4>
+
+Firstly the data was pre-processed and cleaned. Then a correlation analysis was performed to understand the effect of variables on each other, including the final grades. The heatmap of the correlation values is presented above.
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -45,7 +48,8 @@ The aim of the project was to help predict the grades of students and in the pro
     </div>
 </div>
 
-Firstly the data was pre-processed and cleaned. Then a correlation analysis was performed to understand the effect of variables on each other, including the final grades. The heatmap of the correlation values is presented above.
+<h4>Decision Tree</h4>
+Decision tree was the first method used to predict the grades, but the grades were classified into distinct categories and the analysis was performed. A decision tree was programmed on R and using the library ‘rpart’ we split the data into 75% training and 25% test data. We trained the tree using the data and we collected the test and training errors using the data sets we have split. We can evaluate performance using these. The same analysis was performed after applying PCA to the decision tree giving much better results.
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -57,9 +61,6 @@ Firstly the data was pre-processed and cleaned. Then a correlation analysis was 
         </div>
     </div>
 </div>
-
-<h4>Decision Tree</h4>
-Decision tree was the first method used to predict the grades, but the grades were classified into distinct categories and the analysis was performed. A decision tree was programmed on R and using the library ‘rpart’ we split the data into 75% training and 25% test data. We trained the tree using the data and we collected the test and training errors using the data sets we have split. We can evaluate performance using these. The same analysis was performed after applying PCA to the decision tree giving much better results.
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">

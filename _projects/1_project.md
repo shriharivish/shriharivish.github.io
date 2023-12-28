@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ultrasound
-description: High fidelity low-power ultrasound fetal sensor
+description: High fidelity low-power ultrasound fetal sensor | GE HealthCare | 2021-Present
 img: assets/img/uls.png
 importance: 1
 category: work
@@ -32,7 +32,7 @@ The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It e
 </p></div> 
 <br>
 
-<b>LIMITED CONTRIBUTIONS LISTED BELOW DUE TO CONFIDENTIALITY REQUIREMENTS AT GE.</b>
+<i>NOTE: This article documents a small subset of the work done and my contributions to the project so as to not disclose GE's confidential information.</i>
 
 <h4>Transmit Section</h4>
 
