@@ -17,7 +17,7 @@ category: fun
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for a subtle lift */
             max-width: 800px; /* Maximum width of the box */
-            text-align: center;
+            text-align: left;
         }
         .info-box p {
             margin: 0; /* Remove default margin for better spacing */
