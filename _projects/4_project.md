@@ -28,10 +28,8 @@ category: work
 <div class="info-box">
  <h4><b>Abstract</b></h4>
 <p>
-Culture is the process where a fragment of biomatter is forced to grow or develop in a tertiary
-medium. Tissue and cell culture are helping pave the way for numerous technological breakthroughs
-and the work aims to improve the efficiency with which experiments are conducted. I conducted this research at Dr. Oliver Hayden's lab for biomedical electronics as part of my bachelor's thesis at TranslaTUM, TU Munich, Germany. AT TranslaTUM,
-this research is primarily going to accelerate cancer drug testing and cell model studies. I constructed a chamber equipped with necessary actuation mechanisms using the Opentrons OT-2. Subsequently, I implemented a real-time feedback sensing system for monitoring ambient parameters. I collaborated with Sendsor GmbH on their prototype flow-based CO2 sensor. Finally, I integrated the entire system with a MIMO control system, and optimized system parameters to achieve a fivefold increase in assay throughput.
+Culture is the process of making living cells grow in a controlled environment. Tissue and cell culture are important for advancing technology, and my research focused on making experiments more efficient. I conducted this research at Dr. Oliver Hayden's lab for biomedical electronics as part of my bachelor's thesis at TranslaTUM, TU Munich, Germany. At TranslaTUM,
+this research is primarily going to accelerate cancer drug testing and cell model studies. I constructed a chamber equipped with necessary actuation mechanisms simultaneously using the Opentrons OT-2. I then implemented a real-time feedback sensing system for monitoring ambient parameters. I collaborated with Sendsor GmbH on their prototype flow-based CO2 sensor. Finally, I integrated the entire system with a MIMO control system, and optimized system parameters to achieve a fivefold increase in assay throughput.
 </p></div> 
 <br>
 

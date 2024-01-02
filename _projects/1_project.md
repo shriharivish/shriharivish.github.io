@@ -7,6 +7,8 @@ importance: 1
 category: work
 ---
 
+GE HealthCare | 2021-Present 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +30,7 @@ category: work
 <div class="info-box">
  <h4><b>Abstract</b></h4>
 <p>
-The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. I have worked on and delivered the soon-to-be-released portable fetal monitor, the successor to the Corometrics 250 series, which is the gold standard currently. Notably, we've achieved a significant breakthrough by successfully miniaturizing (0.1x) the entire Corometrics device into a small sensor while also improving on its performance. Designed for safe and continuous monitoring, the sensor operates with extremely low acoustic outputs, thus requiring extremely high sensitivity to operate across diverse populations. I have also worked on enabling triplet and quadruplet monitoring, dealing with the complexity of multiple interchangeable sensors and crosstalk. I am currently architecting next-generation wireless fetal sensors and systems for GE HealthCare, market leaders in the segment. 
+The ultrasound sensor is the very heart of GE’s fetal monitoring systems. It enables continuous monitoring and nonstress testing for the fetus in a clinical setting. I have worked on and delivered the soon-to-be-released portable fetal monitor, the successor to the Corometrics 250 series, which is the industry leader. Notably, we've achieved a significant breakthrough by successfully miniaturizing (0.1x) the entire Corometrics device into a small sensor while also improving on its performance. Designed for safe and continuous monitoring, the sensor operates with extremely low acoustic outputs, thus requiring extremely high sensitivity to operate across diverse populations. I have also worked on enabling triplet and quadruplet monitoring, dealing with the complexity of multiple interchangeable sensors and crosstalk. I am currently architecting next-generation wireless fetal sensors and systems for GE HealthCare, market leaders in the segment. 
 </p></div> 
 <br>
 
