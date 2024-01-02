@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-GE HealthCare , 2021-Present 
+GE HealthCare; 2021-Present
 
 <head>
     <meta charset="UTF-8">
